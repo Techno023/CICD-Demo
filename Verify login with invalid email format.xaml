@@ -1,0 +1,444 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Verify_login_with_invalid_email_format" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Verify_login_with_invalid_email_format_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uia="clr-namespace:UiPathTeam.ImagesToPDF.Activities;assembly=UiPathTeam.ImagesToPDF.Activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>Microsoft.Win32.SafeHandles</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>System.Configuration.Assemblies</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.CodeDom.Compiler</x:String>
+      <x:String>System.Buffers</x:String>
+      <x:String>System.Buffers.Text</x:String>
+      <x:String>System.Buffers.Binary</x:String>
+      <x:String>System.Threading</x:String>
+      <x:String>System.Threading.Tasks</x:String>
+      <x:String>System.Threading.Tasks.Sources</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Text.Unicode</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Security.Principal</x:String>
+      <x:String>System.Security.Permissions</x:String>
+      <x:String>System.Security.Cryptography</x:String>
+      <x:String>System.Runtime</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Runtime.Remoting</x:String>
+      <x:String>System.Runtime.ExceptionServices</x:String>
+      <x:String>System.Runtime.ConstrainedExecution</x:String>
+      <x:String>System.Runtime.Versioning</x:String>
+      <x:String>System.Runtime.Loader</x:String>
+      <x:String>System.Runtime.Intrinsics</x:String>
+      <x:String>System.Runtime.Intrinsics.Wasm</x:String>
+      <x:String>System.Runtime.Intrinsics.Arm</x:String>
+      <x:String>System.Runtime.Intrinsics.X86</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.InteropServices.ObjectiveC</x:String>
+      <x:String>System.Runtime.InteropServices.Marshalling</x:String>
+      <x:String>System.Runtime.InteropServices.ComTypes</x:String>
+      <x:String>System.Runtime.CompilerServices</x:String>
+      <x:String>System.Resources</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Reflection.Metadata</x:String>
+      <x:String>System.Reflection.Emit</x:String>
+      <x:String>System.IO.Enumeration</x:String>
+      <x:String>System.Diagnostics.SymbolStore</x:String>
+      <x:String>System.Diagnostics.Contracts</x:String>
+      <x:String>System.Diagnostics.CodeAnalysis</x:String>
+      <x:String>System.Diagnostics.Tracing</x:String>
+      <x:String>System.Collections.Concurrent</x:String>
+      <x:String>Internal</x:String>
+      <x:String>System.CodeDom</x:String>
+      <x:String>Microsoft.CSharp</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Linq.Expressions.Interpreter</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>UiPath.Workflow.Runtime</x:String>
+      <x:String>System.Activities.Tracking</x:String>
+      <x:String>System.Activities.Statements.Tracking</x:String>
+      <x:String>System.Activities.Runtime</x:String>
+      <x:String>System.Activities.Runtime.DurableInstancing</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Activities.ParallelTracking</x:String>
+      <x:String>System.Activities.Hosting</x:String>
+      <x:String>System.Activities.Persistence</x:String>
+      <x:String>System.Activities.DurableInstancing</x:String>
+      <x:String>System.ComponentModel.Design.Serialization</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>Microsoft.VisualBasic.FileIO</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPathTeam.ImagesToPDF.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.IO.Pipes</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography</AssemblyReference>
+      <AssemblyReference>System.Security.Principal.Windows</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.Process</AssemblyReference>
+      <AssemblyReference>System.IO.MemoryMappedFiles</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Registry</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>System.Threading.AccessControl</AssemblyReference>
+      <AssemblyReference>System.Threading</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Threading.Tasks.Parallel</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
+      <AssemblyReference>System.Text.Encodings.Web</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Security.Claims</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.Pkcs</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.ProtectedData</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.CompilerServices.VisualC</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms</AssemblyReference>
+      <AssemblyReference>System.Resources.Writer</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.FileVersionInfo</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.DiagnosticSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TraceSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.EventLog</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.PerformanceCounter</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TextWriterTraceListener</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.StackTrace</AssemblyReference>
+      <AssemblyReference>System.Collections.Concurrent</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPathTeam.ImagesToPDF.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="1056,3997.333333333334" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="email" />
+      <Variable x:TypeArguments="x:String" Name="password" />
+      <Variable x:TypeArguments="x:Object" Name="errorMessage" />
+      <Variable x:TypeArguments="ui:CurrentJobInfo" Name="wfName" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Folder Creation Sequence" sap:VirtualizedContainerService.HintSize="1056,57.333333333333336" sap2010:WorkflowViewState.IdRef="Sequence_9">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:GetCurrentJobInfo DisplayName="Get Current Job Info" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="GetCurrentJobInfo_1" Result="[wfName]" />
+      <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="ScreenShots\" />
+      <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="CreateDirectory_2" Path="[&quot;ScreenShots\&quot; + wfName.WorkflowName.ToString()]" />
+      <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="CreateDirectory_3" Path="[&quot;ScreenShots\&quot; +wfName.WorkflowName.ToString()+&quot;\&quot;+DateTime.Now.Year.ToString]" />
+      <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="CreateDirectory_4" Path="[&quot;ScreenShots\&quot; +wfName.WorkflowName.ToString()+&quot;\&quot;+DateTime.Now.Year.ToString +&quot;\&quot;+DateTime.Now.ToString(&quot;MMMM&quot;)]" />
+      <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="CreateDirectory_5" Path="[&quot;ScreenShots\&quot; +wfName.WorkflowName.ToString()+&quot;\&quot;+DateTime.Now.Year.ToString +&quot;\&quot;+DateTime.Now.ToString(&quot;MMMM&quot;)+&quot;\&quot;+DateTime.Now.Day.ToString]" />
+      <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="416,104.66666666666667" sap2010:WorkflowViewState.IdRef="CreateDirectory_6" Path="[&quot;ScreenShots\&quot; +wfName.WorkflowName.ToString()+&quot;\&quot;+DateTime.Now.Year.ToString +&quot;\&quot;+DateTime.Now.ToString(&quot;MMMM&quot;)+&quot;\&quot;+DateTime.Now.Day.ToString+&quot;\pdf&quot;]" />
+    </Sequence>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1056,57.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Kill MS Edge Process&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
+    <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill process" sap:VirtualizedContainerService.HintSize="1056,57.333333333333336" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="msedge">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:KillProcess>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1056,57.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Launching MS Edge&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Win_LoginScreen" sap:VirtualizedContainerService.HintSize="1056,3697.3333333333335" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="9691f795-d4de-483d-9b96-23fdf5e03424" Version="V2">
+      <uix:NApplicationCard.AutoGenerationOptions>
+        <uix:GenerationOptions ExpectedInputs="{x:Null}" Prompt="{x:Null}" Url="{x:Null}">
+          <uix:GenerationOptions.ExpectedOutputs>
+            <scg:List x:TypeArguments="x:String" Capacity="4">
+              <x:Null />
+            </scg:List>
+          </uix:GenerationOptions.ExpectedOutputs>
+        </uix:GenerationOptions>
+      </uix:NApplicationCard.AutoGenerationOptions>
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="1022,3446.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="" sap:VirtualizedContainerService.HintSize="988,3333.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NTakeScreenshot DisplayName="Take Screenshot" FileName="[&quot;ScreenShots\&quot; +wfName.WorkflowName.ToString()+&quot;\&quot;+DateTime.Now.Year.ToString +&quot;\&quot;+DateTime.Now.ToString(&quot;MMMM&quot;)+&quot;\&quot;+DateTime.Now.Day.ToString+&quot;\TC.png&quot;]" FileNameMode="Index" sap:VirtualizedContainerService.HintSize="954,276.6666666666667" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" Version="V4" />
+              <Assign DisplayName="Set email" sap:VirtualizedContainerService.HintSize="954,116.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_1">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[email]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">["invalid-email"]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="954,178" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Typing Email Address in Email Field&quot;]" />
+              <uix:NTypeInto ActivateBefore="True" DisplayName="Type the email into the email input box" sap:VirtualizedContainerService.HintSize="954,252" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="9691f795-d4de-483d-9b96-23fdf5e03424" Text="[email]">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/login" CVScreenId="830b46e9-27f3-4b83-bf2a-a91a6a2da288" ContentHash="HShey5horEq6Pp9z-HLM0g" DesignTimeRectangle="210, 472, 727, 51" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='email' tag='INPUT' /&gt;" Guid="0c461510-a8c1-429b-809d-cbb98d692012" InformativeScreenshot="4b5693f3192a363049db07a03783e4d1.png" IsResponsive="True" Reference="9UQdtZ6yrUuEsMf5OqmA0Q/7PR3a259zEibl15YuTA21g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="830b46e9-27f3-4b83-bf2a-a91a6a2da288" DesignTimeRectangle="210, 434, 63, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" Guid="23a7d90d-6772-4ec3-95f0-b89ae200ecc0" SearchSteps="Selector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <Assign DisplayName="Set Password" sap:VirtualizedContainerService.HintSize="954,116.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_6">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[password]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">Sandeep@12345</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="954,178" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Typing Password in Password Field&quot;]" />
+              <uix:NTakeScreenshot DisplayName="Take Screenshot" FileName="[&quot;ScreenShots\&quot; +wfName.WorkflowName.ToString()+&quot;\&quot;+DateTime.Now.Year.ToString +&quot;\&quot;+DateTime.Now.ToString(&quot;MMMM&quot;)+&quot;\&quot;+DateTime.Now.Day.ToString+&quot;\TC.png&quot;]" FileNameMode="Index" sap:VirtualizedContainerService.HintSize="954,276.6666666666667" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_2" Version="V4" />
+              <uix:NTypeInto ActivateBefore="True" DisplayName="Type the password into the password input box" sap:VirtualizedContainerService.HintSize="954,252" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="9691f795-d4de-483d-9b96-23fdf5e03424" Text="[password]">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/login" CVScreenId="77b731b6-3491-4e24-88b3-bc0e7aa77336" ContentHash="d38cNGwef0q6aWt3GwBEcw" DesignTimeRectangle="210, 583, 727, 51" DesignTimeScaleFactor="1.5" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" Guid="b8065c1b-c926-4af9-adef-9c7e0371b900" InformativeScreenshot="ee493b6af0672cef670bdc4fe8c5396c.png" Reference="9UQdtZ6yrUuEsMf5OqmA0Q/sPD8S1XOqkGr-1hFWBYM3g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="77b731b6-3491-4e24-88b3-bc0e7aa77336" DesignTimeRectangle="210, 545, 106, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Password:' tag='LABEL' /&gt;" Guid="8dd93aba-1756-4b85-ae34-bf85780c81be" SearchSteps="Selector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="954,178" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Click on Login Button&quot;]" />
+              <uix:NTakeScreenshot DisplayName="Take Screenshot" FileName="[&quot;ScreenShots\&quot; +wfName.WorkflowName.ToString()+&quot;\&quot;+DateTime.Now.Year.ToString +&quot;\&quot;+DateTime.Now.ToString(&quot;MMMM&quot;)+&quot;\&quot;+DateTime.Now.Day.ToString+&quot;\TC.png&quot;]" FileNameMode="Index" sap:VirtualizedContainerService.HintSize="954,276.6666666666667" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_3" Version="V4" />
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click the login button" sap:VirtualizedContainerService.HintSize="954,190.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9691f795-d4de-483d-9b96-23fdf5e03424">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/login" CVScreenId="a42bf514-0972-487d-890d-c7f6069b9807" ContentHash="uj2Hb-7S9Ue-4ICDqb9z_A" DesignTimeRectangle="210, 911, 89, 50" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" Guid="884ba26d-df2b-4c3a-89d4-40fc7f8b82ad" InformativeScreenshot="4e49608dbc236786e0dd40c9ba8b48d5.png" Reference="5_7ZMtQPX0W6d_OFDubWYw/oYei9id33UqYdV2uQNvRdg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NCheckState DisplayName="Check App State 'Text_InvalidEmailError'" sap:VirtualizedContainerService.HintSize="954,946.6666666666666" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="9691f795-d4de-483d-9b96-23fdf5e03424" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,701.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTakeScreenshot DisplayName="Take Screenshot" FileName="[&quot;ScreenShots\&quot; +wfName.WorkflowName.ToString()+&quot;\&quot;+DateTime.Now.Year.ToString +&quot;\&quot;+DateTime.Now.ToString(&quot;MMMM&quot;)+&quot;\&quot;+DateTime.Now.Day.ToString+&quot;\TC.png&quot;]" FileNameMode="Index" sap:VirtualizedContainerService.HintSize="416,276.6666666666667" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_4" Version="V4" />
+                    <uix:NGetText DisplayName="Retrieve the error message displayed" sap:VirtualizedContainerService.HintSize="416,190.66666666666666" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="9691f795-d4de-483d-9b96-23fdf5e03424">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/login" CVScreenId="38709830-e2b1-46ae-9e52-f1e479d6e68b" ContentHash="7aJHlStmf0eI9g2S0M7JIQ" CvTextArea="203, 558, 391, 21" CvTextArgument="Please include an '@' in the email address." CvType="Text" DesignTimeRectangle="203, 558, 391, 21" DesignTimeScaleFactor="1.5" ElementType="Text" Guid="7b12c9c8-5fbe-4965-b1b7-74af5bf3bcff" InformativeScreenshot="88a23a942c2bd44aff2925f2c77bedf8.png" Reference="9UQdtZ6yrUuEsMf5OqmA0Q/97CSi-H4KUC8Xz0ZybfmNw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:Object">[errorMessage]</OutArgument>
+                      </uix:NGetText.Text>
+                    </uix:NGetText>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,171.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Error message: &quot; &amp; errorMessage.ToString()]" />
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,701.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTakeScreenshot DisplayName="Take Screenshot" FileName="[&quot;ScreenShots\&quot; +wfName.WorkflowName.ToString()+&quot;\&quot;+DateTime.Now.Year.ToString +&quot;\&quot;+DateTime.Now.ToString(&quot;MMMM&quot;)+&quot;\&quot;+DateTime.Now.Day.ToString+&quot;\TC.png&quot;]" FileNameMode="Index" sap:VirtualizedContainerService.HintSize="416,276.6666666666667" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_5" Version="V4" />
+                    <uix:NGetText DisplayName="Retrieve the error message displayed" sap:VirtualizedContainerService.HintSize="416,190.66666666666666" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="9691f795-d4de-483d-9b96-23fdf5e03424">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/login" CVScreenId="9fb023ee-fe7f-4e03-8381-dea4523d2ca7" ContentHash="5sBiodDX2kycZz8Hg3Strg" DesignTimeRectangle="210, 688, 443, 23" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='STRONG' /&gt;" Guid="f6793f80-2f06-4fb2-86df-5313be1cc2db" ImageBase64="" InformativeScreenshot="e033ada1632be6e798cbcfe24058e56d.png" Reference="9UQdtZ6yrUuEsMf5OqmA0Q/dt86c7v9Jka61RhnjN3Ziw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="9fb023ee-fe7f-4e03-8381-dea4523d2ca7" DesignTimeRectangle="210, 634, 727, 51" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='email' tag='INPUT' /&gt;" Guid="12c2b994-c489-4f7c-9352-d0e2ac9a14c6" SearchSteps="Selector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:Object">[errorMessage]</OutArgument>
+                      </uix:NGetText.Text>
+                    </uix:NGetText>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,171.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Error message: &quot; &amp; errorMessage.ToString()]" />
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/login" CVScreenId="38709830-e2b1-46ae-9e52-f1e479d6e68b" ContentHash="7aJHlStmf0eI9g2S0M7JIQ" CvTextArea="203, 558, 391, 21" CvTextArgument="Please include an '@' in the email address." CvType="Text" DesignTimeRectangle="203, 558, 391, 21" DesignTimeScaleFactor="1.5" ElementType="Text" Guid="7b12c9c8-5fbe-4965-b1b7-74af5bf3bcff" InformativeScreenshot="88a23a942c2bd44aff2925f2c77bedf8.png" Reference="9UQdtZ6yrUuEsMf5OqmA0Q/97CSi-H4KUC8Xz0ZybfmNw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive" />
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+            </Sequence>
+            <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill process" sap:VirtualizedContainerService.HintSize="988,50.666666666666664" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="msedge">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:KillProcess>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1042" BrowserType="Edge" ContentHash="OOeHa1J1q0WswddySe0fZg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASJSURBVFhHvZdtbFNlFMePblYqvkYTRFyCLOrQhC9CjB80KCqaiCF80C+CRhIZClHJ3AsDt+6FjnbttIyXzRfI3NiYZIm46AcDm4XRN9a1XStu6waL2dgq2xhTTJZtj/9zy23vZltZafnwb/Pc3uf5/3ruec55LtEeZz90FRq/xWLPiwwgQipltYfHCRfWZg/lNXyMhQaac4LybYJ22ZOjfBbWZ4gyyXOEAcZJiwF+XHvM31jlubwx79fBzJw4Jc/NahnM3GkOisfZrYOZWuvw+ztODRRTCSJRJEV6NAjARJ/bxYamC2sAQFiEMCkuyXMBQDCXxGMAEAAIAKTa2wE/h8AfVwAUOcRL9f7tyQb42j2yPJUBCucC4MLrjb0fJQpgaHJm2crKzrbVDf4qHssAVc7LT0QFWJsgACHEQyllLkEfmgVtMYtdbUMnZACjbTg6wBvfhwHS9nur1Tq3EzvD+UpjrymSGWvFN7+bqeic416D25NS4tzMc1svXdtEm1sEVXgEfdKGjO8QMkC5LRAdYN3xMIBa77pGhdiWORax8khXIJI5a0mlV1CuRVAx7tW0H74OQOlfnRe07bSkpt5xzbwB7jN6LFSMrbLTJp6r7T4ZyZy17KBvStrbKDIPfOEpUADQ7paBDbnWwFMACOXAoVg5MAvA4LEpAFoimbMAMMP3MMBCvbtwDgABgIb/nr5NBqh2jSQPQFXWEQJYesAn1Hgsd+k6BPKpQgao8YwmGOCQb1oGUCsicI/RLegz5AZKsErn0skAdd7EA4QioATAvxa0G7Ufze1hU2ehDFCbaID0KACP8u5gANT9RV/GAXC/8YYBIj6CuADeVAAs2OuyS10LW2xVTfepSOasjGrfpASgxb2lTs1NASgrIZLIiwonKNsi1jT4f45kzko7EDZaaHDrbwrghaP+EMC7P/WfoE/PCso6K56t6xmMZM5K1SHb0copxypMzsBWGeCRfXEAPF8bBjjsG90ilVJuKngMXVcnH5trPiPECsqzcgmWttvFvyYXywCLTJ3zB3i5YRYAqcthnodF+OYCh8g/fek9vT2QUf/b2PLc1oFs4l5RgrnbzohnaruvAECaGysCNbEAXlO0YwZo/mNiK71zEhmO3zkfEGZVOULO4ywUGT5DsskHZjE2LV5VAqRxDvCjQR1YbPIW3FAEIgDQ28397bQDufAx2ipP4s7HB0xEhK+rNA6x8ZcBHQBICUBamGw/IyUxorRfBqj3zR+AmvsmVr3V1PfjgzqXuBu1PRX9fYnRM7Hphwvf9f8zpYJoLsCLR3uupO/rnHqyyidW1/mzZYAjnhjNKAYAAYAAQAAgABAACADE5lEACAAEAAJAqB0fdMYAwJEsdChNFsC3rpGMqAA4lK67BQB0Jx7jf4/lyOb1x/tKj50fW1phDzytt86WDjJAZZYhaWyIcM//qdL55+M66/D6VE5QJC+8JYDgqxkgUvDDAiTa7fjmMCVad0C0B+LaEXwdlF7NggN+V+PXJd5eTJcMyWvLnix89ECjUECS9vp3MjR7bXg6u/4FPqMYP5QOgtAAAAAASUVORK5CYII=" InformativeScreenshot="3009550574d66b5e7a54329413274e5a.jpg" Reference="9UQdtZ6yrUuEsMf5OqmA0Q/hVBRyQusYEOqdgZJVGc8QA" Selector="&lt;html app='msedge.exe' title='ACME System 1 - Log In' /&gt;" Title="ACME System 1 - Log In" Url="https://acme-test.uipath.com/login" Version="V1" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <Sequence DisplayName="Upload PDF To Manager" sap:VirtualizedContainerService.HintSize="1056,48" sap2010:WorkflowViewState.IdRef="Sequence_10">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uia:ImagesToPDF ImageFile="{x:Null}" DisplayName="Images To PDF" sap:VirtualizedContainerService.HintSize="416,223.33333333333334" sap2010:WorkflowViewState.IdRef="ImagesToPDF_1" ImagesFolder="[&quot;ScreenShots\&quot; +wfName.WorkflowName.ToString()+&quot;\&quot;+DateTime.Now.Year.ToString +&quot;\&quot;+DateTime.Now.ToString(&quot;MMMM&quot;)+&quot;\&quot;+DateTime.Now.Day.ToString+&quot;\&quot;]" OutputFile="[&quot;ScreenShots\&quot; +wfName.WorkflowName.ToString()+&quot;\&quot;+DateTime.Now.Year.ToString +&quot;\&quot;+DateTime.Now.ToString(&quot;MMMM&quot;)+&quot;\&quot;+DateTime.Now.Day.ToString+&quot;\pdf\&quot; +wfName.WorkflowName.ToString()+&quot;.pdf&quot;]" Overwrite="True">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uia:ImagesToPDF>
+      <uta:AttachDocument ContinueOnError="{x:Null}" Tags="{x:Null}" DisplayName="Attach Document" FilePath="[&quot;ScreenShots\&quot; +wfName.WorkflowName.ToString()+&quot;\&quot;+DateTime.Now.Year.ToString +&quot;\&quot;+DateTime.Now.ToString(&quot;MMMM&quot;)+&quot;\&quot;+DateTime.Now.Day.ToString+&quot;\pdf\&quot; +wfName.WorkflowName.ToString()+&quot;.pdf&quot;]" sap:VirtualizedContainerService.HintSize="416,114.66666666666667" sap2010:WorkflowViewState.IdRef="AttachDocument_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uta:AttachDocument>
+    </Sequence>
+  </Sequence>
+</Activity>

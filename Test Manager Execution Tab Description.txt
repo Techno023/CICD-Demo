@@ -1,0 +1,19 @@
+The Execution Tab allows us to view execution results and also we can execute test sets
+
+After executing testsets, in the Execution Tab we can view detailed results, including
+ 
+Pass/Fail Status: Quickly identify which test cases passed or failed.
+Execution Time: Measure how long each test case took to execute.
+
+Re-executing Tests
+If a test case fails, we can easily re-execute it:
+Select the failed test case and choose the Re-execute option.
+ 
+We can download the execution report in two file format: Excel and PDF
+
+We have option to generate the Insight Report, if the testsets got passed it give only overview and it got failed will give the overview,Common Errors,Error Patterns and Recommendations as well.
+ 
+In the Project Setting Tab we have integration option where we can connect and synchronize various ALM tools.
+Currently we have two to three options which is in the preview mode where like in future we will be getting more options.
+
+In the Dashboard we can see the execution graph.

@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Win_LoginScreen",
+  "Type": "Screen",
+  "Id": "hVBRyQusYEOqdgZJVGc8QA",
+  "Reference": "9UQdtZ6yrUuEsMf5OqmA0Q/hVBRyQusYEOqdgZJVGc8QA",
+  "ParentRef": "9UQdtZ6yrUuEsMf5OqmA0Q/1e0uamvGWUqVqXMnFdNCmA",
+  "Created": "2025-01-29T10:03:27.2287544Z",
+  "Updated": "2025-01-29T10:04:01.8271587Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

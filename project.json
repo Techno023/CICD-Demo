@@ -1,0 +1,100 @@
+{
+  "name": "ACME Test Automation",
+  "projectId": "2d42af14-16b5-48ce-bf0c-648829da113a",
+  "description": "Test Automation Project",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.IntegrationService.Activities": "[1.12.0]",
+    "UiPath.System.Activities": "[24.10.7]",
+    "UiPath.Testing.Activities": "[24.10.4]",
+    "UiPath.UIAutomation.Activities": "[24.10.10]",
+    "UiPath.Word.Activities": "[1.20.3]",
+    "UiPathTeam.ImagesToPDF.Activities": "[1.0.14]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "24.10.8.0",
+  "projectVersion": "1.1.196688344",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "4fff8e78-ead7-48b3-9b6e-6dff1a6d71cc",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "7b604790-b514-4778-95bb-22ddab2c9dd4",
+        "testCaseType": "TestCase",
+        "fileName": "Verify login with both fields empty.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "14919844-bc12-4df2-8e1b-c421bf66c6ed",
+        "testCaseType": "TestCase",
+        "fileName": "Verify login with incorrect password.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "bc6211d0-fd74-40ca-8c19-f0ce0fc6aa29",
+        "testCaseType": "TestCase",
+        "fileName": "Verify login with invalid email format.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "c293e51d-5063-478f-aaff-91863a972e24",
+        "testCaseType": "TestCase",
+        "fileName": "Verify successful login with valid credentials.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "527989b7-9a54-44ef-8e14-674ef2175ef7",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Verify login with valid email and password with special characters.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "77d9bf28-97da-49f3-9b9e-9c2afab291dc",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Verify login with valid email and empty password.xaml"
+      }
+    ],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

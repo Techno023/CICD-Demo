@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Elemet_Dashboard",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "YV8ZgAHc50WpA8CdX1RJUw",
+  "Reference": "9UQdtZ6yrUuEsMf5OqmA0Q/YV8ZgAHc50WpA8CdX1RJUw",
+  "ParentRef": "9UQdtZ6yrUuEsMf5OqmA0Q/NHEatNuGgUOzqKPTJ-a72Q",
+  "Created": "2025-01-29T10:16:22.1829339Z",
+  "Updated": "2025-01-29T10:16:53.2137997Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

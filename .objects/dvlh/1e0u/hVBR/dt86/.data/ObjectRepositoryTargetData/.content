@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="5sBiodDX2kycZz8Hg3Strg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com/login" CVScreenId="9fb023ee-fe7f-4e03-8381-dea4523d2ca7" DesignTimeRectangle="210, 688, 443, 23" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='STRONG' /&gt;" Guid="f6793f80-2f06-4fb2-86df-5313be1cc2db" ImageBase64="" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="9fb023ee-fe7f-4e03-8381-dea4523d2ca7" DesignTimeRectangle="210, 634, 727, 51" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='email' tag='INPUT' /&gt;" Guid="12c2b994-c489-4f7c-9352-d0e2ac9a14c6" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e033ada1632be6e798cbcfe24058e56d.png" xmlns="">0ZO0fQJEnDkma5wJ2ShWHFQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

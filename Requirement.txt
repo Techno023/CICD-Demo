@@ -1,0 +1,9 @@
+As an user I want to login to ACME Website
+steps are added below :
+-Open URL "https://acme-test.uipath.com/login" in msedge browser.
+	1.It is expected to :Sap_Application login page should appear
+	2.Enter 'shrivassandeep82@gmail.com' in Email field
+	3.Enter 'Sandeep@12345' in Password field
+-Click on Login Button.
+	It is expected to load ACME Home screen
+

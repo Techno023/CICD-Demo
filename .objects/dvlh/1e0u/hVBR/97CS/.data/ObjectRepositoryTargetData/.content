@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="7aJHlStmf0eI9g2S0M7JIQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com/login" CVScreenId="38709830-e2b1-46ae-9e52-f1e479d6e68b" CvTextArea="203, 558, 391, 21" CvTextArgument="Please include an '@' in the email address." CvType="Text" DesignTimeRectangle="203, 558, 391, 21" DesignTimeScaleFactor="1.5" ElementType="Text" Guid="7b12c9c8-5fbe-4965-b1b7-74af5bf3bcff" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="88a23a942c2bd44aff2925f2c77bedf8.png" xmlns="">0ihTjJMOMkUaxZKNu1AQvtw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

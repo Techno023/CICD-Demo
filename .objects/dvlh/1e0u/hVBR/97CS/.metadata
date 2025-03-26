@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Popup_Error2",
+  "Type": "Element",
+  "TaxonomyType": "Text",
+  "Id": "97CSi-H4KUC8Xz0ZybfmNw",
+  "Reference": "9UQdtZ6yrUuEsMf5OqmA0Q/97CSi-H4KUC8Xz0ZybfmNw",
+  "ParentRef": "9UQdtZ6yrUuEsMf5OqmA0Q/hVBRyQusYEOqdgZJVGc8QA",
+  "Created": "2025-01-29T10:12:01.9908079Z",
+  "Updated": "2025-01-29T10:18:32.237677Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
