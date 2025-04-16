@@ -220,7 +220,7 @@
       <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="549.3333333333333,5110" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="780.6666666666666,5110" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="emptyEmail" />
       <Variable x:TypeArguments="x:String" Name="emptyPassword" />
@@ -310,7 +310,7 @@
                 <InArgument x:TypeArguments="x:String">[""]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Typing Email Address in Email Field&quot;]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Fatal" Message="[&quot;Typing Email Address in Email Field&quot;]" />
             <uix:NTakeScreenshot DisplayName="Take Screenshot" FileName="[&quot;ScreenShots\&quot; +wfName.WorkflowName.ToString()+&quot;\&quot;+DateTime.Now.Year.ToString +&quot;\&quot;+DateTime.Now.ToString(&quot;MMMM&quot;)+&quot;\&quot;+DateTime.Now.Day.ToString+&quot;\TC.png&quot;]" FileNameMode="Index" sap:VirtualizedContainerService.HintSize="434,281.3333333333333" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_2" Version="V4" />
             <uix:NTypeInto ActivateBefore="True" DisplayName="Type empty email into the email input box" sap:VirtualizedContainerService.HintSize="434,254.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="002a9624-d6ae-49e2-bab8-bd26d40a8408" Text="[emptyEmail]">
               <uix:NTypeInto.Target>
@@ -361,7 +361,7 @@
               </uix:NGetText.Text>
             </uix:NGetText>
             <uix:NTakeScreenshot DisplayName="Take Screenshot" FileName="[&quot;ScreenShots\&quot; +wfName.WorkflowName.ToString()+&quot;\&quot;+DateTime.Now.Year.ToString +&quot;\&quot;+DateTime.Now.ToString(&quot;MMMM&quot;)+&quot;\&quot;+DateTime.Now.Day.ToString+&quot;\TC.png&quot;]" FileNameMode="Index" sap:VirtualizedContainerService.HintSize="434,281.3333333333333" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_4" Version="V4" />
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Field error popup message: &quot; &amp; errorMessage.ToString()]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Fatal" Message="[&quot;Field error popup message: &quot; &amp; errorMessage.ToString()]" />
             <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill process" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="msedge" />
           </Sequence>
         </ActivityAction>
